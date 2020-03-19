@@ -21,7 +21,7 @@ const BlogIndex = ({ data, location }) => {
 
       <div className="hero" id="vantajs">
       <Nav />
-        <div className="intro-text">
+        <div className="intro-text" data-sal="slide-up" data-sal-duration="800">
           <div className="div-block">
             <h1 className="headline">Our goal is to help you achieve cyber security best practices.</h1>
             <div className="text-block">CMMC is a huge initiative. We would like to simplify it by providing a community that can collaborate and help each other through it. Check out articles, events, or head over to the forum to join the conversation.</div>
@@ -62,7 +62,7 @@ const BlogIndex = ({ data, location }) => {
       })} */}
 
       
-      <div class="article-list">
+      <div class="article-list" >
 
       {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug
@@ -70,10 +70,10 @@ const BlogIndex = ({ data, location }) => {
                 <article className="article-card" key={node.fields.slug}>
                     <a href={node.frontmatter.original} target="_blank"><img className="article-card-img" src={node.frontmatter.image} /></a>
                     <a href={node.frontmatter.original} target="_blank" className="article-card-headline">
-                        <h1 class="article-card-headline">{title} ↗</h1>
+                        <div data-sal="slide-up" data-sal-duration="800"><h1 class="article-card-headline">{title} ↗</h1></div>
                     </a>
-                    <div className="article-date">{node.frontmatter.date}</div>
-                    <p class="article-description">{node.frontmatter.description}</p>
+                    <div data-sal="slide-up" data-sal-duration="800" className="article-date">{node.frontmatter.date}</div>
+                    <p class="article-description" data-sal="slide-up" data-sal-duration="800" data-sal-delay="100">{node.frontmatter.description}</p>
                 </article>
                 
               )

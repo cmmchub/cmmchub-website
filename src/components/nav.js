@@ -9,7 +9,7 @@ import "../styles/cmmchub.css"
 export default () => (
 
 
-    <div className="nav">
+    <div className="nav" data-sal="slide-up" data-sal-duration="800">
         <div><Link to="/"><img src="../images/cmmc-logo-white.png" className="image" /></Link></div>
         <div>
             <Link to="/" className="link" activeClassName="w--current">Articles</Link>
