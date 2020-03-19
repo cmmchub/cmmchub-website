@@ -19,11 +19,11 @@ export default () => (
 
       
 
-      <div className="hero" id="vantajs">
+      <div className="hero">
       <Nav />
         <div className="intro-text" data-sal="slide-up" data-sal-duration="800">
           <div className="div-block">
-            <h1 className="headline">CMMC Evenst & Meetups</h1>
+            <h1 className="headline">CMMC Events & Meetups</h1>
             <div className="text-block">Find the latest events around the world here! If you would like to learn more information on how we can help promote please email events@cmmchub.com.</div>
           </div>
         </div>

@@ -15,6 +15,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <>
+
       <SEO title="CMMCHub" />
 
       
